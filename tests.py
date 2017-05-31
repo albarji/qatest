@@ -14,3 +14,13 @@ def test_div():
     
 def test_exp():
     assert(calc.exp(2,3) == 8)
+
+def test_fibonacci1():
+    assert(calc.fibonacci(1) == 1)
+
+def test_fibonacci2():
+    assert(calc.fibonacci(2) == 1)
+
+def test_fibonacci5():
+    assert(calc.fibonacci(5) == 5)
+
