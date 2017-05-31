@@ -6,7 +6,7 @@ Implements a very simple calculator
 import math
 
 def sum(a, b):
-    return a - b
+    return a + b # Superarreglado!!
 
 def sub(a, b):
     return a - b
