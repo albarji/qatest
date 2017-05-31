@@ -24,3 +24,6 @@ def test_fibonacci2():
 def test_fibonacci5():
     assert(calc.fibonacci(5) == 5)
 
+def test_factorize():
+    assert(calc.factorize(6) == [2, 3])
+    assert(calc.factorize(8) == [2, 2, 2])

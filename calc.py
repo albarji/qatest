@@ -35,7 +35,24 @@ def fibonacci(i):
     if i == 2:
         return 1
     else:
-        # Recursion to find the i-th value of fibonacci series by using the values 
-	# that are computed for smaller inputs
+    # Recursion to find the i-th value of fibonacci series by using the values 
+    # that are computed for smaller inputs
         return fibonacci(i-1) + fibonacci(i-2) 
 
+def factorize(i):
+    factors = []
+    remainder = i
+    if i == 1:
+        return [1]
+    if i < 1:
+        return ValueError
+    while True:
+        if remainder == 1:
+            break
+        # Loop over possible factors
+        for f in range(2, remainder+1):
+            if not remainder % f:
+                factors.append(f)
+                remainder = int(remainder / f)
+                break
+    return factors
