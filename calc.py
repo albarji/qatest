@@ -3,9 +3,9 @@ calc.py
 
 Implements a very simple calculator
 """
-import math
 
-def sum(a, b):
+def sum(a, 
+  b):
     return a + b # Superarreglado!!
 
 def sub(a, b):
@@ -14,7 +14,10 @@ def sub(a, b):
 def div(a, b):
     if b == 0:
         raise ValueError
+        return 0
     return a / b
+
+import math
 
 def exp(a, b):
     return math.pow(a, b)
@@ -29,4 +32,4 @@ def fibonacci(i):
     if i == 2:
         return 1
     else:
-        return fibonacci(i-1) + fibonacci(i-2)
+        return fibonacci(i-1) + fibonacci(i-2) # Recursion to find the i-th value of fibonacci series by using the values tha are computed for smaller inputs
